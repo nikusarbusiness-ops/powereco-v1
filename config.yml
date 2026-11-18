@@ -1,0 +1,35 @@
+# PowerEco Konfiguration
+currency:
+  symbol: "$"
+  singular: "Coin"
+  plural: "Coins"
+start-balance: 1000.0
+auction:
+  tax-percent: 5.0
+  duration-hours: 48
+  default-max-listings: 10   # Basis-AH-Plätze; Ränge/Permissions können mehr geben
+  min-price: 1.0
+orders:
+  max-per-player: 5          # Basis-Order-Plätze; Ränge/Permissions können mehr geben
+sell:
+  default-multiplier: 1.0    # Basis-Verkaufsmultiplikator für /sell
+bounty:
+  min-amount: 100.0
+
+# RÄNGE: Der Name ist der LuckPerms-Gruppenname (Permission "group.<name>")
+# oder alternativ die Permission powereco.rank.<name>. Es zählt immer der höchste Wert.
+# Zusätzlich gehen direkte Permissions: powereco.ah.limit.<Zahl>, powereco.orders.limit.<Zahl>,
+# powereco.sell.multiplier.<Zahl>  (z.B. powereco.sell.multiplier.1.2)
+ranks:
+  vip:
+    ah-slots: 15
+    order-slots: 8
+    sell-multiplier: 1.1
+  mvp:
+    ah-slots: 20
+    order-slots: 12
+    sell-multiplier: 1.2
+  elite:
+    ah-slots: 30
+    order-slots: 20
+    sell-multiplier: 1.35

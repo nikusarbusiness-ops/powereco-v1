@@ -1,0 +1,54 @@
+name: PowerEco
+main: de.coreeco.CoreEco
+version: ${project.version}
+api-version: '1.21'
+author: PowerEco
+description: PowerEco - Economy mit Auction House, Orders, Shop, Sell-GUI, Baltop-GUI, Bounties und Rang-Boni
+softdepend: [Vault, PlaceholderAPI, LuckPerms, SimpleScore]
+commands:
+  bal:
+    description: Kontostand anzeigen
+    aliases: [balance, money]
+    permission: powereco.balance
+  pay:
+    description: Geld senden
+    permission: powereco.pay
+  eco:
+    description: Admin-Economy-Befehl
+    permission: powereco.admin
+  baltop:
+    description: Reichste Spieler
+    aliases: [balancetop]
+    permission: powereco.baltop
+  ah:
+    description: Auction House
+    aliases: [auction, auctionhouse]
+    permission: powereco.ah
+  orders:
+    description: Orders (Items bestellen)
+    aliases: [order]
+    permission: powereco.orders
+  bounty:
+    description: Kopfgelder
+    aliases: [kopfgeld]
+    permission: powereco.bounty
+  shop:
+    description: Server-Shop (Perlen, Totems, Crystals ...)
+    aliases: [store, kaufen]
+    permission: powereco.shop
+  sell:
+    description: Items verkaufen
+    aliases: [verkaufen]
+    permission: powereco.sell
+permissions:
+  powereco.balance: {default: true}
+  powereco.balance.others: {default: true}
+  powereco.pay: {default: true}
+  powereco.baltop: {default: true}
+  powereco.ah: {default: true}
+  powereco.orders: {default: true}
+  powereco.bounty: {default: true}
+  powereco.shop: {default: true}
+  powereco.sell: {default: true}
+  powereco.admin: {default: op}
+  powereco.hologram: {default: op}
